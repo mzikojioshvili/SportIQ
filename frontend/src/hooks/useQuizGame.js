@@ -66,7 +66,7 @@ export function useQuizGame(quiz, questions) {
             setCurrentIndex((i) => i + 1)
             setSelectedAnswer(null)
             setAnswered(false)
-            setTimeLeft(4)
+            setTimeLeft(15)
             return
         }
 
