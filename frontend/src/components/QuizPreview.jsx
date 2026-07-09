@@ -37,7 +37,7 @@ const QuizPreview = ({ quiz, onStart, onBack }) => {
                 <div className="flex gap-4 w-full max-w-sm mt-2">
                     {[
                         { label: 'Questions', value: quiz.questionsCount },
-                        { label: 'Time Limit', value: <>5s <span className="text-xs font-normal text-[#52525B]">/ Q</span></> },
+                        { label: 'Time Limit', value: <>15s <span className="text-xs font-normal text-[#52525B]">/ Q</span></> },
                     ].map(({ label, value }) => (
                         <div key={label} className="flex-1 py-4 rounded-2xl text-center bg-[#121212] border border-white/5">
                             <p className="text-xs text-[#52525B] font-bold uppercase tracking-wider">{label}</p>

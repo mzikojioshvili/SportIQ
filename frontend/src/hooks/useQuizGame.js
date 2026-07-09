@@ -10,7 +10,7 @@ export function useQuizGame(quiz, questions) {
     const [currentIndex, setCurrentIndex] = useState(0)
     const [selectedAnswer, setSelectedAnswer] = useState(null)
     const [answered, setAnswered] = useState(false)
-    const [timeLeft, setTimeLeft] = useState(4)
+    const [timeLeft, setTimeLeft] = useState(15)
     const [score, setScore] = useState(0)
     const [isFinished, setIsFinished] = useState(false)
     const [xpEarned, setXpEarned] = useState(0)
@@ -28,7 +28,7 @@ export function useQuizGame(quiz, questions) {
             else {
                 clearInterval(id)
                 setGameState('playing')
-                setTimeLeft(4)
+                setTimeLeft(15)
             }
         }, 1000)
         return () => clearInterval(id)
